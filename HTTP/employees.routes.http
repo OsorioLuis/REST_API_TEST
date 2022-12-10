@@ -1,0 +1,23 @@
+### get employees
+GET http://localhost:3000/employees
+
+###
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+  "name": "random_2",
+  "salary": 1000
+}
+
+### Get employee by id
+GET http://localhost:3000/employees/2
+
+### Update an employee
+PATCH http://localhost:3000/employees/2
+Content-Type: application/json
+
+{
+  "name": "random",
+  "salary": 9000
+}
